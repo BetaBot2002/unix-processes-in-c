@@ -10,7 +10,7 @@
 #include<fcntl.h>
 #include<string.h>
 
-int main(int argv,char** argc){
+int main(int argc,char** argv){
     char* fifo_path="Files/myFifo1";
 
     int fifo_status=mkfifo(fifo_path,0777);

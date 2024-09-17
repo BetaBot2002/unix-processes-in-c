@@ -3,7 +3,7 @@
 #include<unistd.h>
 #include<sys/wait.h>
 
-int main(){
+int main(int argc,char** argv){
     int id=fork();
     if(id==0) sleep(1); //reason for zombie process
     printf("Current: %d\n",getpid());

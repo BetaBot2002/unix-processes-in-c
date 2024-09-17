@@ -6,7 +6,7 @@
 #include<errno.h>
 #include<fcntl.h>
 
-int main(int argv,char** argc){
+int main(int argc,char** argv){
     char* fifo_path="Files/sum";
 
     int fifo_status=mkfifo(fifo_path,0777);
